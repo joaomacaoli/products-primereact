@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📦 Products PrimeReact
 
-## Getting Started
+Este é um projeto simples de gerenciamento de produtos desenvolvido com **Next.js** e **PrimeReact**. A aplicação foi criada com o objetivo de estudar e aplicar os componentes da biblioteca PrimeReact em um CRUD visualmente rico e funcional.
 
-First, run the development server:
+![Demonstração da aplicação](./public/demo.png)
+
+![Demonstração em funcionamento dos filtros](./public/filters.gif)
+
+![Demonstração em funcionamento da paginação](./public/paginate.gif)
+
+![Demonstração em funcionamento dos btns editar e deletar](./public/edit-delete.gif)
+
+## 🧭 Índice
+
+- [📦 Products PrimeReact](#-products-primereact)
+  - [🧭 Índice](#-índice)
+  - [✨ Funcionalidades](#-funcionalidades)
+  - [🚀 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+  - [📂 Estrutura de Pastas](#-estrutura-de-pastas)
+  - [🛠️ Instalação e Execução](#️-instalação-e-execução)
+  - [🤓 Objetivo](#-objetivo)
+  - [📎 Repositório](#-repositório)
+  - [📃 Licença](#-licença)
+
+## ✨ Funcionalidades
+
+- Tela de produtos com:
+  - Filtros personalizáveis
+  - Botões de ação: **Pesquisar** e **Limpar**
+- Listagem de produtos com:
+  - Paginação
+  - Seleção de total de itens por página
+  - Botões de **Edição** e **Remoção**
+
+## 🚀 Tecnologias Utilizadas
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [PrimeReact](https://primereact.org/)
+- [PrimeIcons](https://www.primefaces.org/primeicons/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## 📂 Estrutura de Pastas
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+├── app/
+├── components/
+│   └── products/
+│       ├── products-page.tsx              # Página principal de produtos
+│       ├── table/
+│       │   ├── filter-actions.tsx         # Ações dos filtros
+│       │   ├── reusable-table.tsx         # Tabela reutilizável
+│       │   ├── table-actions.tsx          # Botões de ação da tabela
+│       │   ├── table-filter.tsx           # Filtro da tabela
+│       └── ui/
+│           └── buttons/
+│               ├── clear-button.tsx       # Botão de limpar filtros
+│               ├── delete-button.tsx      # Botão de deletar item
+│               ├── edit-button.tsx        # Botão de editar item
+│               ├── search-button.tsx      # Botão de pesquisa
+├── mocks/
+│   └── products.ts                        # Dados mockados de produtos
+└── types/
+    └── products.ts                        # Tipagem do modelo de produto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Instalação e Execução
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Clone o repositório
+git clone https://github.com/joaomacaoli/products-primereact.git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Acesse o diretório do projeto
+cd products-primereact
 
-## Learn More
+# Instale as dependências
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Rode o projeto em ambiente de desenvolvimento
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A aplicação estará disponível em: [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤓 Objetivo
 
-## Deploy on Vercel
+Este projeto foi desenvolvido durante o feriado de Páscoa como parte dos meus estudos e aprofundamento em **PrimeReact** com **Next.js**. Estou muito feliz por ter aproveitado esse tempo para aprender algo novo e espero aplicar esse conhecimento em projetos futuros!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📎 Repositório
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔗 [https://github.com/joaomacaoli/products-primereact](https://github.com/joaomacaoli/products-primereact)
+
+## 📃 Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
